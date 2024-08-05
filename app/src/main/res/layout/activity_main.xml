@@ -11,29 +11,15 @@
     android:background="#301934"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/TitleText"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/title"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        />
-
-    <TextView
-        android:id="@+id/GreetingText"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/greeting"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        />
+        android:src="@mipmap/logo"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/logo" />
 
     <Button
         android:id="@+id/Login"
@@ -41,11 +27,12 @@
         android:layout_height="80dp"
         android:layout_gravity="center"
         android:text="@string/login"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textAllCaps="true"
         android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="20dp"
         />
 
     <Button
@@ -54,7 +41,7 @@
         android:layout_height="80dp"
         android:layout_gravity="center"
         android:text="@string/register"
-        android:textSize="18sp"
+        android:textSize="30sp"
         android:textColor="#000000"
         android:textStyle="bold"
         android:textAllCaps="true"

@@ -46,4 +46,5 @@
     <string name="register">register</string>
     <string name="title">Stress Guru</string>
     <string name="greeting">Always there for you</string>
+    <string name="logo">The logo of the application itself</string>
 </resources>
