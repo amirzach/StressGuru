@@ -47,4 +47,8 @@
     <string name="title">Stress Guru</string>
     <string name="greeting">Always there for you</string>
     <string name="logo">The logo of the application itself</string>
+    <string name="loginPage">Login</string>
+    <string name="Email_Login_Text">Email</string>
+    <string name="Password_Text_Login">Password</string>
+    <string name="confirm_login">confirm</string>
 </resources>
