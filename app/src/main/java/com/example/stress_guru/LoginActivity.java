@@ -6,6 +6,7 @@ import android.util.Patterns;
 import android.widget.Toast;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +17,7 @@ import java.util.regex.Pattern;
 public class LoginActivity extends AppCompatActivity {
 
     TextInputLayout textInputEmail, textInputPassword;
-    Button confirmBtn;
+    Button confirmBtn, resetBtn;
     ImageButton exitBtn;
 
     private static final Pattern PASSWORD_PATTERN=
@@ -30,11 +31,23 @@ public class LoginActivity extends AppCompatActivity {
         textInputPassword=findViewById(R.id.input_password);
         confirmBtn=findViewById(R.id.confirm_button);
         exitBtn=findViewById(R.id.returnbutton);
+        resetBtn=findViewById(R.id.resetpass_button);
+
+        resetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPasswordActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         exitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(LoginActivity.this, "Exit Button clicked", Toast.LENGTH_LONG);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

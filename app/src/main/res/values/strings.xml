@@ -5,6 +5,17 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="login">Login</string>
+    <string name="register">register</string>
+    <string name="title">Stress Guru</string>
+    <string name="greeting">Always there for you</string>
+    <string name="logo">The logo of the application itself</string>
+    <string name="loginPage">Login</string>
+    <string name="Email_Login_Text">Email</string>
+    <string name="Password_Text_Login">Password</string>
+    <string name="confirm_login">confirm</string>
+    <string name="return_desc">A button to return to previous page</string>
+    <string name="editPass_text"><u>Forgot Password?</u></string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -42,14 +53,4 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="login">Login</string>
-    <string name="register">register</string>
-    <string name="title">Stress Guru</string>
-    <string name="greeting">Always there for you</string>
-    <string name="logo">The logo of the application itself</string>
-    <string name="loginPage">Login</string>
-    <string name="Email_Login_Text">Email</string>
-    <string name="Password_Text_Login">Password</string>
-    <string name="confirm_login">confirm</string>
-    <string name="return_desc">A button to return to previous page</string>
 </resources>
