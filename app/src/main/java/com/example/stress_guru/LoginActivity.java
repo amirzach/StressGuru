@@ -2,16 +2,12 @@ package com.example.stress_guru;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.util.Patterns;
 import android.widget.Toast;
 import android.widget.Button;
+import android.widget.ImageButton;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -21,6 +17,7 @@ public class LoginActivity extends AppCompatActivity {
 
     TextInputLayout textInputEmail, textInputPassword;
     Button confirmBtn;
+    ImageButton exitBtn;
 
     private static final Pattern PASSWORD_PATTERN=
             Pattern.compile("^"+"(?=.*[0-9])"+"(?=.*[a-zA-Z])"+"(?=\\S+$)"+".{6,}"+"$");
@@ -32,6 +29,14 @@ public class LoginActivity extends AppCompatActivity {
         textInputEmail=findViewById(R.id.input_email);
         textInputPassword=findViewById(R.id.input_password);
         confirmBtn=findViewById(R.id.confirm_button);
+        exitBtn=findViewById(R.id.returnbutton);
+
+        exitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Exit Button clicked", Toast.LENGTH_LONG);
+            }
+        });
 
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override

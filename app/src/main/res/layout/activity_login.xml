@@ -10,7 +10,7 @@
     android:gravity="center_vertical"
     android:padding="10dp"
     android:background="#301934"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -25,11 +25,20 @@
         android:orientation="vertical"
         android:padding="16dp"
         >
+            <ImageButton
+                android:id="@+id/returnbutton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/exit"
+                android:backgroundTint="#FFFFFF"
+                android:contentDescription="@string/return_desc"
+                />
+
 
             <TextView
                 android:id="@+id/Login"
                 android:layout_width="300dp"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:text="@string/loginPage"
                 android:textStyle="bold"
                 android:textColor="#000000"
@@ -37,6 +46,7 @@
                 android:textAllCaps="true"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:paddingTop="10dp"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
