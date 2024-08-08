@@ -3,6 +3,7 @@ package com.example.stress_guru;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.content.Intent;
 
@@ -15,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     Button Login, Register;
+    ImageButton Exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,17 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageView=findViewById(R.id.Logo);
 
+        Exit = findViewById(R.id.exit_dialog);
         Login = findViewById(R.id.Login);
         Register = findViewById(R.id.Register);
+
+        Exit.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                new ExitActivity().show(getSupportFragmentManager(),"ExitActivity");
+            }
+        });
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override

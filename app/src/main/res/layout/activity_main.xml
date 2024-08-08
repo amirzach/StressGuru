@@ -11,6 +11,14 @@
     android:background="#301934"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/exit_dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/exit"
+        android:contentDescription="@string/exit_button_desc"
+        />
+
     <ImageView
         android:id="@+id/Logo"
         android:layout_width="400dp"
@@ -19,7 +27,8 @@
         android:gravity="center"
         android:src="@mipmap/logo"
         android:scaleType="fitXY"
-        android:contentDescription="@string/logo" />
+        android:contentDescription="@string/logo"
+        />
 
     <Button
         android:id="@+id/Login"
