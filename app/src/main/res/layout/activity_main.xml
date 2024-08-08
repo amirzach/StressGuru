@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center_vertical"
-    android:padding="16dp"
+    android:padding="6dp"
     android:background="#301934"
     tools:context=".MainActivity">
 
@@ -17,6 +17,7 @@
         android:layout_height="40dp"
         android:src="@mipmap/exit"
         android:contentDescription="@string/exit_button_desc"
+        android:padding="10dp"
         />
 
     <ImageView
