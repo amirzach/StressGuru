@@ -54,4 +54,7 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="exit_button_desc">button for exitting the app</string>
+    <string name="reset_password_text">reset password</string>
+    <string name="new_password_text">New Password</string>
+    <string name="confirm_new_password_text">Confirm New Password</string>
 </resources>
