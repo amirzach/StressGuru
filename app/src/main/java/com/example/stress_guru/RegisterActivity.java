@@ -16,8 +16,8 @@ import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    TextInputLayout textInputEmail, textInputNewPassword, textConfirmNewPassword;
-    Button confirmBtn, resetBtn;
+    TextInputLayout textInputEmail, textInputNewPassword, textConfirmNewPassword, textInputUserName;
+    Button confirmBtn;
     ImageButton exitBtn;
 
     private static final Pattern PASSWORD_PATTERN=
@@ -25,11 +25,12 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_password);
+        setContentView(R.layout.activity_register);
 
         textInputEmail=findViewById(R.id.input_email);
         textInputNewPassword=findViewById(R.id.input_new_password);
         textConfirmNewPassword=findViewById(R.id.confirm_new_password);
+        textInputUserName=findViewById(R.id.input_name);
         confirmBtn=findViewById(R.id.confirm_button);
         exitBtn=findViewById(R.id.returnbutton);
 
@@ -45,7 +46,7 @@ public class RegisterActivity extends AppCompatActivity {
         confirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!validateEmail() | !validatePassword()){
+                if(!validateEmail() | !validatePassword() | !validateName()){
                     return;
                 }
 
@@ -67,6 +68,18 @@ public class RegisterActivity extends AppCompatActivity {
             return false;
         }else{
             textInputEmail.setError(null);
+            return true;
+        }
+    }
+
+    private boolean validateName(){
+        String nameInput=textInputUserName.getEditText().getText().toString().trim();
+
+        if(nameInput.isEmpty()){
+            textInputUserName.setError("Failed. Please enter your name");
+            return false;
+        }else{
+            textInputUserName.setError(null);
             return true;
         }
     }

@@ -58,4 +58,5 @@
     <string name="new_password_text">New Password</string>
     <string name="confirm_new_password_text">Confirm New Password</string>
     <string name="register_text">register</string>
+    <string name="NewUserNameText">Name</string>
 </resources>

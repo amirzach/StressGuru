@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 public class ResetPasswordActivity extends AppCompatActivity {
 
     TextInputLayout textInputEmail, textInputNewPassword, textConfirmNewPassword;
-    Button confirmBtn, resetBtn;
+    Button confirmBtn;
     ImageButton exitBtn;
 
     private static final Pattern PASSWORD_PATTERN=
